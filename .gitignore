@@ -1,0 +1,29 @@
+# Python virtual environment
+.venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code settings
+.vscode/
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and runtime files
+*.log
+*.sqlite3
+*.db
+
+# Optional: ignore dataset files if you don't want them in git
+# train.csv
+# test.csv
