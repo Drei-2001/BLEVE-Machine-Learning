@@ -40,4 +40,7 @@ model.fit(X, y)
 
 test = test.drop(columns=[target_col], errors="ignore")
 predictions = model.predict(test)
-print(predictions)
+
+results = pd.DataFrame({target_col: predictions})
+results.to_csv("results.csv", index=False)
+print("Predictions written to results.csv")
