@@ -27,3 +27,4 @@ dist/
 # Optional: ignore dataset files if you don't want them in git
 # train.csv
 # test.csv
+sample_prediction.csv

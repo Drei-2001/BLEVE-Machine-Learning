@@ -41,6 +41,9 @@ model.fit(X, y)
 test = test.drop(columns=[target_col], errors="ignore")
 predictions = model.predict(test)
 
-results = pd.DataFrame({target_col: predictions})
-results.to_csv("results.csv", index=False)
-print("Predictions written to results.csv")
+results = pd.DataFrame({
+    "ID": range(1, len(predictions) + 1),
+    target_col: predictions,
+})
+results.to_csv("sample_prediction.csv", index=False)
+print("Predictions written to sample_prediction.csv")
